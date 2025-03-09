@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Linking the styles.css to this css_basics.html  -->
+    <link rel="stylesheet" href="additional_style.css">
+    <style>
+        /* Using tag selector to style all anchor tags with the same background-color */
+        a {
+            background-color: rgb(230, 230, 230);
+        }
+        /* Using ID selector to style the h1 element or the headline */
+        #title {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 44px;
+            color: #3b3b3b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">CSS Basics</h1>
+        <ul>
+            <!-- Applying inline CSS to one anchor tag to change its color  -->
+            <li><a rel="noopener" target="_blank" href="https://www.google.com/" style="color: #3b3b3b;">Google</a></li>
+            <li><a rel="noopener" target="_blank" href="https://www.facebook.com/">Facebook</a></li>
+            <!-- Applying the reusable button class to one anchor element  -->
+            <li><a class="button" rel="noopener" target="_blank" href="https://www.youtube.com/">YouTube</a></li>
+        </ul>
+    </header>
+    <hr>
+    <main>
+        <!-- Application of parent and child element applying color, font, and other css styles -->
+        <div class="parent-div-1">
+            parent div 1
+            <div class="child-div">child 1 of parent div 1</div>
+            <div class="child-div">child 2 of parent div 1</div>
+            <div class="child-div">child 3 of parent div 1</div>
+        </div>
+        <div class="parent-div-2">
+            parent div 2
+            <div class="child-div">child 1 of parent div 2</div>
+            <div class="child-div">child 2 of parent div 2</div>
+            <div class="child-div">child 3 of parent div 2</div>
+        </div>
+        <div class="parent-div-3">
+            parent div 3
+            <div class="child-div">child 1 of parent div 3</div>
+            <div class="child-div">child 2 of parent div 3</div>
+            <div class="child-div">child 3 of parent div 3</div>
+        </div>
+    </main>
+    <footer class="footer">
+		<p>&copy; <time>2024</time> Sammy Jr. T. Ping-ay. All rights reserved.</p>
+	</footer>
+</body>
+</html>

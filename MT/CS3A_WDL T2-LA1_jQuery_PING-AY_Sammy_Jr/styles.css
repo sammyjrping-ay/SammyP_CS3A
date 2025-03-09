@@ -1,0 +1,36 @@
+/* Defining a reusable button class that style color, background-color, font-style, font-family, and font-weight */
+.button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: rgb(145, 145, 145);
+    background-color: #3b3b3b;
+}
+
+a:hover {
+    background-color: #3b3b3b;
+    /* Utilization of !important  */
+    color: rgb(255, 255, 255) !important;
+}
+
+.parent-div-1 .child-div {
+    width: 40%;
+    color: black;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+.parent-div-2 .child-div {
+    background-color: #3b3b3b;
+    width: 60%;
+    color: white;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.parent-div-3 .child-div {
+    width: 80%;
+    color: black;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
