@@ -35,3 +35,34 @@ header, footer {
 aside {
     border-right: 1px solid rebeccapurple;
 }
+
+.container3 {
+    display: grid;
+    grid-template: repeat(9, 50px) / repeat(3, 50px);
+    gap: 3px;
+}
+
+.container3 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: linear-gradient(135deg, rebeccapurple, #cd8afa);
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.container3 > div:hover {
+    background: linear-gradient(135deg, rebeccapurple, #F0D0FF);
+    box-shadow: 0 4px 15px rgba(180, 139, 204, 0.6);
+}
+.container3 > div:active {
+    transform: scale(0.95);
+}
+.container3 > div:last-child {
+    grid-column-start: 2;   
+}
