@@ -3,9 +3,141 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Features</title>
+	<link rel="stylesheet" href="./css/features.css">
 </head>
 <body>
-	
+	<header>
+		<nav>
+			<h1>Feature Page</h1>
+			<a href="./homepage.html">Home</a>
+			<a href="./features.html">Features</a>
+		</nav>
+	</header>
+	<div class="container">
+		<main>
+			<div class="grid">
+				<div class="product">
+					<div class="top-card">Espresso</div>
+					<img id="Espresso" src="./assets/drinks/espresso_edited-removebg-preview.png" alt="">
+					<p>Php 70.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Espresso', 70)">Remove</button>
+						<button class="add" onclick="addToCart('Espresso', 70)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Americano</div>
+					<img id="Americano" src="./assets/drinks/americano_edited-removebg-preview.png" alt="">
+					<p>Php 90.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Americano', 90)">Remove</button>
+						<button class="add" onclick="addToCart('Americano', 90)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Cappuccino</div>
+					<img id="Cappuccino" src="./assets/drinks/cappuccino_edited-removebg-preview.png" alt="">
+					<p>Php 90.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Cappuccino', 90)">Remove</button>
+						<button class="add" onclick="addToCart('Cappuccino', 90)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Latte</div>
+					<img id="Latte" src="./assets/drinks/latte_edited-removebg-preview.png" alt="">
+					<p>Php 100.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Latte', 100)">Remove</button>
+						<button class="add" onclick="addToCart('Latte', 100)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Mocha</div>
+					<img id="Mocha" src="./assets/drinks/mocha_edited-removebg-preview.png" alt="">
+					<p>Php 120.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Mocha', 120)">Remove</button>
+						<button class="add" onclick="addToCart('Mocha', 120)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Hazelnut</div>
+					<img id="Hazelnut" src="./assets/drinks/hazelnut_edited-removebg-preview.png" alt="">
+					<p>Php 110.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Hazelnut', 110)">Remove</button>
+						<button class="add" onclick="addToCart('Hazelnut', 110)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Chocolate</div>
+					<img id="Chocolate" src="./assets/drinks/chocolate_edited-removebg-preview.png" alt="">
+					<p>Php 90.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Chocolate', 90)">Remove</button>
+						<button class="add" onclick="addToCart('Chocolate', 90)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Matcha</div>
+					<img id="Matcha" src="./assets/drinks/matcha_edited-removebg-preview.png" alt="">
+					<p>Php 130.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Matcha', 130)">Remove</button>
+						<button class="add" onclick="addToCart('Matcha', 130)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Milk</div>
+					<img id="Milk" src="./assets/drinks/milk_edited-removebg-preview.png" alt="">
+					<p>Php 50.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Milk', 50)">Remove</button>
+						<button class="add" onclick="addToCart('Milk', 50)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Caramel</div>
+					<img id="Caramel" src="./assets/drinks/caramel_edited-removebg-preview.png" alt="">
+					<p>Php 120.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Caramel', 120)">Remove</button>
+						<button class="add" onclick="addToCart('Caramel', 120)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Tea</div>
+					<img id="Tea" src="./assets/drinks/tea_edited-removebg-preview.png" alt="">
+					<p>Php 100.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Tea', 100)">Remove</button>
+						<button class="add" onclick="addToCart('Tea', 100)">Add</button>
+					</div>
+				</div>
+				<div class="product">
+					<div class="top-card">Almond</div>
+					<img id="Almond" src="./assets/drinks/almond_edited-removebg-preview.png" alt="">
+					<p>Php 130.00</p>
+					<div class="btn-grp">
+						<button class="remove" onclick="removeFromCart('Almond', 130)">Remove</button>
+						<button class="add" onclick="addToCart('Almond', 130)">Add</button>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+		<aside>
+			<ul class="cart" id="cart"></ul>
+			<p class="total" id="total">Total Cost: Php 0.00</p>
+		</aside>
+	</div>
+
+	<footer class="footer">
+		<p>© <time>2024</time> Sammy Jr. T. Ping-ay. All rights reserved.</p>
+	</footer>
+
+	<script src="./js/feature.js" defer></script>
 </body>
 </html>
