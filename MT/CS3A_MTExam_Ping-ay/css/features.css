@@ -10,7 +10,6 @@ html {
 }
 .container{
     margin-inline: auto;
-    padding-top: 80px;
     width: 90vw;
     display: flex;
     max-width: 1600px;
@@ -76,6 +75,31 @@ header a {
 header a:hover {
     background-color: #1a3d8f;
 }
+
+
+.hero {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    width: 90vw;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 117px;
+    letter-spacing: 0px;
+    color: #081b5a;
+    text-align: center;
+    line-height: 130px;
+    font-style: italic;
+}
+.hero div {
+    background-image: url('./../assets/coffee.jpg');
+    width: 50%;
+    height: 95%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 
 aside {
@@ -164,9 +188,15 @@ img {
 }
 main p {
     font-size: 16px;
+    color: rgb(8, 27, 90, 0.8);
+    padding-top: 15px;
+    padding-inline: 10px;
+}
+.item-cost {
     font-weight: bold;
     color: #081b5a;
-    padding: 15px;
+    font-size: 20px;
+    padding-bottom: 15px;
 }
 .btn-grp {
     display: flex;
@@ -190,6 +220,7 @@ main button {
 .remove {
     border: 2px solid #081b5a;
     color: #081b5a;
+    background-color: white;
 }
 .remove:hover {
     color: white;
@@ -215,7 +246,7 @@ aside ul {
     padding-bottom: 10px;
     transition: transform 0.3s ease;
     width: 95%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .cart-top-card {
     width: 100%;
@@ -230,10 +261,43 @@ aside ul {
     font-weight: bold;
     margin-bottom: 8px;
 }
+.cart img {
+    margin-top: 3px;
+}
 .cart-product p {
     font-size: 16px;
     font-weight: bold;
-    padding: 12px;
+    padding: 8px;
+}
+.minus-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8.5px;
+    margin-inline: 8px;
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: #081b5a;
+    border: 2px solid white;
+    color: white;
+}
+.minus-btn:hover {
+    color: #081b5a;
+    background-color: white;
+}
+.add-btn {
+    border: 2px solid white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    padding: 2px 6.5px;
+    margin-left: 8px;
+    color: #081b5a;
+    border-radius: 5px;
+}
+.add-btn:hover {
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
 }
 .total {
     border-radius: 5px;
@@ -241,6 +305,7 @@ aside ul {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: 19px;
     background-color: white;
     color: #081b5a;
     width: 95%;

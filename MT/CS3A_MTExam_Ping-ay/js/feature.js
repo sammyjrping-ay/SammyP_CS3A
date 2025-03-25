@@ -8,9 +8,11 @@ function addToCart(productName, productPrice) {
     } else {
         cart[productName] = {
             quantity: 1,
-            totalPrice: productPrice
+            totalPrice: productPrice,
+            price: productPrice
         };
     }
+    
     updateCartDisplay();
 }
 
@@ -33,6 +35,7 @@ function updateCartDisplay() {
     cartList.innerHTML = ''; 
     var total = 0;
     for (let product in cart) {
+        
         const divProduct = document.createElement('div');
             divProduct.className = 'cart-product';
         const divTopCard = document.createElement('div');
@@ -41,14 +44,18 @@ function updateCartDisplay() {
         const productImgSrc = document.getElementById(`${product}`).src;
         const productImg = document.createElement('img');
             productImg.src = productImgSrc;
+        const pPrice = document.createElement('p');
+            pPrice.innerText = 'Price: Php ' + cart[product].price.toFixed(2);
+            pPrice.className = 'cart-price';
         const pQuantity = document.createElement('p');
-            pQuantity.innerText = 'Quantity:  ' + cart[product].quantity;
+            pQuantity.innerHTML = `Quantity: <button class="minus-btn" onclick="removeFromCart('${product}', ${cart[product].price})">-</button>${cart[product].quantity}<button class="add-btn" onclick="addToCart('${product}', ${cart[product].price})">+</button>`;
         const pTotalPrice = document.createElement('p');
             pTotalPrice.innerText = 'Total Price:  ' + cart[product].totalPrice.toFixed(2);
 
         divProduct.appendChild(divTopCard);
         divProduct.appendChild(productImg);
         divProduct.appendChild(pQuantity);
+        divProduct.appendChild(pPrice);
         divProduct.appendChild(pTotalPrice);
 
         cartList.appendChild(divProduct); 
