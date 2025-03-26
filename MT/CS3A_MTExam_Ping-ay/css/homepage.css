@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 html {
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
@@ -16,7 +15,6 @@ html {
     max-width: 1600px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 h2 {
     height: 15%;
     font-size: 36px;
@@ -26,6 +24,8 @@ h2 {
     width: 100%;
 }
 
+
+/* Header  */
 header {
     max-width: 1600px;
     background-color: #081b5a;
@@ -78,6 +78,7 @@ header a:hover {
 }
 
 
+/* Aside  */
 aside {
     position: sticky;
     height: calc(100vh - 80px);
@@ -127,6 +128,7 @@ aside a:hover {
     background-color: #1a3d8f;
 }
 
+
 main {
     width: 80%;
 }
@@ -135,21 +137,7 @@ section {
 }
 
 
-footer {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    left: 0;
-    background-color: #081b5a;
-}
-footer p {
-    color: white;
-}
-
-
+/* Hero  */
 .hero {
     display: flex;
     justify-content: center;
@@ -171,6 +159,7 @@ footer p {
 }
 
 
+/* Skills */
 section.skills {
     display: flex;
     width: 100%;
@@ -191,13 +180,11 @@ section.skills h2 {
     margin-inline: auto;
     margin-top: 10px;
 }
-
 .skills-row {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
 }
-
 .skill {
     background-color: #ffffff;
     width: 200px;
@@ -226,6 +213,7 @@ section.skills h2 {
 }
 
 
+/* Achievements */
 .achievements-section {
     display: flex;
     width: 100%;
@@ -263,6 +251,7 @@ section.skills h2 {
 }
 
 
+/* Contact Information */
 .contact-information {
     display: flex;
     width: 100%;
@@ -317,6 +306,7 @@ section.skills h2 {
 }
 
 
+/* Form */
 #form {
     display: flex;
     flex-direction: column;
@@ -381,3 +371,19 @@ button:hover {
     background-color: #1a3d8f;
 }
 
+
+
+/* Footer */
+footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    background-color: #081b5a;
+}
+footer p {
+    color: white;
+}

@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 html {
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
@@ -15,7 +14,6 @@ html {
     max-width: 1600px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 h2 {
     height: 15%;
     font-size: 36px;
@@ -25,6 +23,8 @@ h2 {
     width: 100%;
 }
 
+
+/* Header */
 header {
     max-width: 1600px;
     background-color: #081b5a;
@@ -77,6 +77,15 @@ header a:hover {
 }
 
 
+main {
+    width: 80%;
+}
+section {
+    height: calc(100vh - 80px);
+}
+
+
+/* Hero */
 .hero {
     margin-top: 80px;
     height: calc(100vh - 80px);
@@ -101,50 +110,7 @@ header a:hover {
 }
 
 
-
-aside {
-    position: sticky;
-    height: calc(100vh - 80px);
-    background-color: blueviolet;
-    width: 20%;
-    top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #081b5a; 
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-    border-right: 3px solid #34495e;
-}
-
-main {
-    width: 80%;
-}
-section {
-    height: calc(100vh - 80px);
-}
-
-
-footer {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    left: 0;
-    background-color: #081b5a;
-}
-footer p {
-    color: white;
-}
-
-
+/* Grid */
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -228,7 +194,26 @@ main button {
 }
 
 
-
+/* Aside */
+aside {
+    position: sticky;
+    height: calc(100vh - 80px);
+    background-color: blueviolet;
+    width: 20%;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #081b5a; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    border-right: 3px solid #34495e;
+}
 aside ul {
     width: 100%;
     overflow: auto;
@@ -310,4 +295,20 @@ aside ul {
     color: #081b5a;
     width: 95%;
     height: 50px;
+}
+
+
+/* Footer */
+footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    background-color: #081b5a;
+}
+footer p {
+    color: white;
 }
