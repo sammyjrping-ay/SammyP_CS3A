@@ -1,0 +1,77 @@
+/* Universal reset for margin, padding, and box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style for the body: center content and set text color */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Style for the auth form container */
+.auth-form {
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the header of the form */
+.auth-form h2 {
+    color: #ffffff;
+    background-color: #0d226d;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Style for select and password input fields */
+select,
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #081b5a;
+    font-size: 14px;
+}
+
+/* Style for the login button */
+button {
+    width: 90%;
+    margin-inline: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #081b5a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #dcdcdc;
+}
