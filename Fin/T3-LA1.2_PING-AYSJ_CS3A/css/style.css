@@ -1,51 +1,79 @@
+/* Apply border-box model and remove default margin and padding for all elements */
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
+/* Enable smooth scrolling with offset for fixed headers */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+/* Set default font for the entire document */
 body {
     font-family: 'Inter', sans-serif;
 }
 
+
+/* White text color */
 .txt-white {
     color: white;
 }
+
+/* Light gray text color */
 .txt-light {
     color: #AEAEAE;
 }
+
+/* Gold text color */
 .txt-gold {
     color: #FAAF3D;
 }
 
+
+/* Dark gray background */
 .bg-gray {
     background-color: #171717;
 }
+
+/* Near black background */
 .bg-black { 
     background-color: #121212;
 }
+
+/* Gold background */
 .bg-gold {      
     background-color: #FAAF3D;
 }
 
 
+
 /* Hero  */
+/* Container with flex layout, full viewport size, and max width */
 .hero-container {
     display: flex;
     width: 100vw;
     height: 100vh;
     max-width: 1536px;
 }
+
+/* Hero section takes 5 parts of flex space, centers content vertically */
 .hero {
     flex: 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+/* Logo image sized at 75% width and centered horizontally */
 .logo {
     width: 75%;
     margin-inline: auto;
 }
+
+/* Paragraph inside hero with top margin, centered text, and styled spacing */
 .hero > p {
     margin-top: 30px;
     width: 75%;
@@ -55,29 +83,43 @@ body {
     letter-spacing: 2.5px;
     text-align: center;
 }
+
+/* Common styles for sign-up and login sections: vertical flex layout and center content */
 .sign-up, .login {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+/* Both sections take 3 parts of flex space */
 .sign-up, .login {
     flex: 3;
 }
+
+/* First paragraph in sign-up and login styled as large bold heading with bottom margin */
 .sign-up p:first-child, .login p:first-child {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 40px;
 }
+
+/* All direct children of sign-up and login have 70% width and centered horizontally */
 .sign-up > *, .login > * {
     width: 70%;
     margin-inline: auto;
 }
+
+/* All direct children inside forms take full width */
 form > * {
     width: 100%;
 }
+
+/* Labels use smaller font size */
 label {
     font-size: 15px;
 }
+
+/* Style input fields with no border, rounded corners, fixed height, and padding */
 input {
     border: none;
     border-radius: 5px;
@@ -87,10 +129,14 @@ input {
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
+/* Remove outline and border on input focus */
 input:focus {
     border: none;
     outline: none;
 }
+
+/* Button styles: full width, rounded corners, centered text, bold font */
 .btn {
     width: 100%;
     border-radius: 5px;
@@ -99,25 +145,193 @@ input:focus {
     font-size: 14px;
     font-weight: bold;
     margin-top: 40px;
-    display: block;
-    text-decoration: none;
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
+
+/* Button hover effect: brighter background and black text */
 .btn:hover {
     background-color: hsl(36, 100%, 69%);
     color: black;
 }
-.sign-up > p:last-child, .login > p:last-child{
+
+/* Last paragraph in sign-up and login sections: centered text and small font */
+.sign-up > p:last-child, .login > p:last-child {
     text-align: center;
     font-size: 15px;
     margin-top: 15px;
 }
+
+/* Remove underline from all links */
 a {
     text-decoration: none;
 }
+
+/* Change link color on hover */
 a:hover {
     color: hsl(36, 100%, 69%);
+}
+
+
+/* Newsfeed  */
+/* Fixed header with horizontal flex layout, 60px height, and vertical centering */
+header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+}
+
+/* Logo image with left margin and fixed width */
+#fyp-logo {
+    margin-left: 50px;
+    width: 150px;
+}
+
+/* Navigation container uses flex and is pushed to the right with side margins */
+nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 22px;
+}
+
+/* Navigation links with no underline, white color, and left spacing */
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+/* Logout link styling with no underline, right margin, and font size */
+#logout {
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 22px;
+}
+
+/* Icons inside header with smaller font size and left margin */
+header i {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* Container with top margin to avoid fixed header overlap */
+.fyp-container {
+    margin-top: 100px;
+}
+
+/* Post container with top margin, fixed width, centered, padding, and shadow */
+.post {
+    margin-top: 70px;
+    width: 900px;
+    margin-inline: auto;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Post header uses flex layout and vertically centers items */
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile image styled as a circle with border and fixed height */
+.profile {
+    height: 70px;
+    border-radius: 40px;
+    border: 1px solid white;
+}
+
+/* Heading inside post header spaced from profile image */
+.post-header h2 {
+    margin-left: 20px;
+}
+
+/* Content container with vertical margins, horizontal flex, and center alignment */
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Paragraph inside content with fixed width, auto left margin, centered text, and spacing */
+.content p {
+    width: 400px;
+    margin-left: auto;
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 10px;
+    line-height: 36px;
+}
+
+/* Content-column container with vertical margins, vertical flex, and centered items */
+.content-column {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Images inside content and content-column with white border */
+.content img, .content-column img {
+    border: 1px solid white;
+}
+
+/* Paragraph inside content-column with top margin, wider width, centered text, and spacing */
+.content-column p {
+    margin-top: 20px;
+    width: 700px;
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 10px;
+    line-height: 36px;
+}
+
+/* Icons with larger font size and pushed to the right */
+i {
+    font-size: 25px;
+    margin-left: auto;
+}
+
+/* Footer of post with horizontal flex layout */
+.post-footer {
+    display: flex;
+}
+
+/* Icon containers with horizontal flex and vertical centering */
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Comments section spaced from likes */
+.comments {
+    margin-left: 50px;
+}
+
+/* Shares section pushed to the right */
+.shares {
+    margin-left: auto;
+}
+
+/* Paragraph inside post footer with left margin for spacing */
+.post-footer p {
+    margin-left: 8px;
+}
+
+/* Page footer centered horizontally and vertically with fixed height and top margin */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 50px;
 }
