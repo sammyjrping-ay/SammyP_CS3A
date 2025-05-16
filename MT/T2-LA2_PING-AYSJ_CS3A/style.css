@@ -1,0 +1,141 @@
+/* Reset box-sizing and remove default margin/padding */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Set default font for body */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Text color utility classes */
+.txt-white { color: white; }
+.txt-light { color: #AEAEAE; }
+.txt-gold { color: #FAAF3D; }
+
+/* Background color utility classes */
+.bg-gray { background-color: #171717; }
+.bg-black { background-color: #121212; }
+.bg-gold { background-color: #FAAF3D; }
+
+/* Hero container styling - flex layout full viewport */
+.hero-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1536px;
+}
+
+/* Hero section - flex grows 5, vertical column, centered */
+.hero {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Logo image - 75% width centered horizontally */
+.logo {
+    width: 75%;
+    margin-inline: auto;
+}
+
+/* Hero paragraph styling with spacing, width, font */
+.hero > p {
+    margin-top: 30px;
+    width: 75%;
+    margin-inline: auto;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+/* Sign-up and login sections - flex layout, vertical column, centered */
+.sign-up, .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+}
+
+/* Big bold heading text in sign-up and login */
+.sign-up p:first-child, .login p:first-child {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Children inside sign-up and login take 70% width centered */
+.sign-up > *, .login > * {
+    width: 70%;
+    margin-inline: auto;
+}
+
+/* Form children take full width */
+form > * {
+    width: 100%;
+}
+
+/* Label styling */
+label {
+    font-size: 15px;
+}
+
+/* Input fields styling */
+input {
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 15px;
+    padding-inline: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Remove outline on input focus */
+input:focus {
+    border: none;
+    outline: none;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: hsl(36, 100%, 69%);
+    color: black;
+}
+
+/* Last paragraph in sign-up/login (links) styling */
+.sign-up > p:last-child, .login > p:last-child {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* Anchor tags default no underline */
+a {
+    text-decoration: none;
+}
+
+/* Anchor tags hover color */
+a:hover {
+    color: hsl(36, 100%, 69%);
+}
