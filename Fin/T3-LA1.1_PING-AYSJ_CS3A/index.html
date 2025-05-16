@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Signup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray">
+	<!-- Container for the signup section -->
+	<div id="signup" class="hero-container">
+
+		<!-- Left side: descriptive hero section -->
+		<div class="hero bg-gray txt-light">
+			<!-- Logo image -->
+			<img class="logo" src="./resources/logo-name-hero.png" alt="">
+			
+			<!-- Platform description -->
+			<p>
+			A 100% anonymous social platform where you can freely share thoughts, vent, and seek advice without fear of judgment...
+			</p>
+		</div>
+
+		<!-- Right side: sign-up form -->
+		<div class="sign-up bg-black txt-light">
+			
+			<!-- Heading for account creation -->
+			<p class="txt-white">Create<br>new account</p>
+			
+			<!-- Sign-up form (no backend action specified yet) -->
+			<form action="" method="">
+			
+			<!-- Username input -->
+			<label for="username-su">Username</label><br>
+			<input class="bg-gray txt-light" type="text" id="username-su" name="username" required><br>
+
+			<!-- Email input -->
+			<label for="email">Email</label><br> 
+			<input class="bg-gray txt-light" type="email" id="email" name="email" required><br>
+
+			<!-- Password input -->
+			<label for="password-su">Password</label><br>
+			<input class="bg-gray txt-light" type="password" id="password-su" name="password" required>
+
+			<!-- Confirm password input -->
+			<label for="confirm-password">Confirm Password</label><br>
+			<input class="bg-gray txt-light" type="password" id="confirm-password" name="confirm-password" required><br>
+			
+			</form>
+
+			<!-- Submit button triggers createUser() JavaScript function -->
+			<button class="bg-gold btn" onclick="createUser()">Create Account</button>
+
+			<!-- Link to switch to login page -->
+			<p>
+			Already a member? 
+			<button class="txt-gold btn-a bg-black" onclick="changePage()">Log in</button>
+			</p>
+
+		</div>
+	</div>
+
+
+	<!-- Login section container, hidden by default -->
+	<div id="login" class="hero-container bg-gray txt-light hidden">
+
+		<!-- Left side: hero content with logo and description -->
+		<div class="hero">
+			<img class="logo" src="./resources/logo-name-hero.png" alt="">
+			<p>
+			A 100% anonymous social platform where you can freely share thoughts, vent, and seek advice without fear of judgment...
+			</p>
+		</div>
+
+		<!-- Right side: login form -->
+		<div class="login bg-black txt-light"> 
+			
+			<!-- Login heading -->
+			<p class="txt-white">Speak freely,<br>anonymously</p>
+			
+			<!-- Login form (no backend action yet) -->
+			<form action="" method="">
+			
+			<!-- Username input -->
+			<label for="username">Username</label><br>
+			<input class="bg-gray txt-light" type="text" id="username" name="username"><br>
+
+			<!-- Password input -->
+			<label for="password">Password</label><br>
+			<input class="bg-gray txt-light" type="password" id="password" name="password"><br>
+			
+			</form>
+
+			<!-- Login button triggers authUser() JavaScript function -->
+			<button id="login-btn" class="btn bg-gold" onclick="authUser()">Login</button>
+
+			<!-- Button to switch to sign-up page -->
+			<p>
+			Already a member? 
+			<button class="btn-a bg-black txt-gold" onclick="changePage()">Create account</button>
+			</p>
+
+		</div>
+	</div>
+
+
+	<!-- Success message container, hidden by default -->
+	<div id="success" class="hero-container hidden">
+
+		<!-- Message shown after successful login -->
+		<h1 class="txt-white">Login Successful!</h1>
+
+		<!-- Button to go back, triggers back() JavaScript function -->
+		<button id="success-btn" class="btn bg-gold" onclick="back()">Go Back</button>
+
+	</div>
+
+
+	<!-- Links the external JavaScript file and defers execution until HTML is fully loaded -->
+	<script src="script.js" defer></script>
+</body>
+</html>
