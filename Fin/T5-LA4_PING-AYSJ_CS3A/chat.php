@@ -116,7 +116,7 @@ $users = $conn->query("SELECT id, username FROM users WHERE id != {$_SESSION['us
       background-color: #0a2472;
     }
 
-    .logout {
+    .logout, .dashboard {
       position: absolute;
       top: 10px;
       right: 20px;
@@ -124,8 +124,11 @@ $users = $conn->query("SELECT id, username FROM users WHERE id != {$_SESSION['us
       font-weight: bold;
       text-decoration: none;
     }
+    .dashboard {
+      right: 150px;
+    }
 
-    .logout:hover {
+    .logout:hover,  .dashboard:hover {
       text-decoration: underline;
     }
   </style>
@@ -133,6 +136,7 @@ $users = $conn->query("SELECT id, username FROM users WHERE id != {$_SESSION['us
 <body>
 
 <!-- Logout link -->
+<a class="dashboard" href="dashboard.php">Dashboard</a>
 <a class="logout" href="logout.php">Logout</a>
 
 <!-- Main container with sidebar and chat section -->
